@@ -32,6 +32,21 @@
 					<backend_model>Df\Config\Backend\Checkbox</backend_model>
 					<comment><![CDATA[Enable the «<a href='https://mage2.pro/c/extensions/zoho-crm' target='_blank'>Zoho CRM</a>» extension?]]></comment>
 				</field>
+				<field
+					id='token'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='2'
+					translate='label'
+					type='obscure'
+				>
+					<label>Authentication Token</label>
+					<comment><![CDATA[<div class='df-note'><ol><li>Click <a href='https://accounts.zoho.com/apiauthtoken/create?SCOPE=ZohoCRM/crmapi&DISPLAY_NAME=Mage2.PRO' target='_blank'>the link</a>.</li><li>Enter your Zoho username and password (if you are asked for it)</li><li>You will see a string like AUTHTOKEN=&lt;<code>your token</code>&gt;. Copy the <code>your token</code> value (it is a 32-character string like <code>2cb9cf21cb7c5116623b8da2f9b99497</code>), and paste it to the input field above.</li></ol>The full process is described in the <a href='https://www.zoho.eu/crm/help/api/using-authentication-token.html#Generate_Auth_Token' target='_blank'>Zoho CRM API documentation</a>.</div>]]></comment>
+					<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+					<depends>
+						<field id='enable'>1</field>
+					</depends>
+					<validate>required-entry</validate>
+				</field>
 			</group>
 		</section>
 	</system>
