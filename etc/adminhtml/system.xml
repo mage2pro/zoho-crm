@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<config
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:module:Df_Config:etc/system_file.xsd'
+>
+	<system>
+		<section id='df_zoho'>
+<!--
+2015-09-25
+1-я и 2-я цифры sortOrder соответствуют порядковому номеру первой буквы модуля
+в английском алфавите: https://en.wikipedia.org/wiki/English_alphabet
+3-я и 4-я цифры sortOrder соответствуют порядковому номеру второй буквы модуля
+в английском алфавите.
+-->
+			<group
+				id='crm'
+				showInDefault='1' showInStore='1' showInWebsite='1' sortOrder='318'
+				translate='label'
+			>
+				<label>CRM</label>
+				<dfExtension>Dfe_ZohoCRM</dfExtension>
+				<frontend_model>Df\Config\Fieldset</frontend_model>
+				<field
+					id='enable'
+					showInDefault='1' showInStore='1' showInWebsite='1' sortOrder='1'
+					translate='label'
+					type='Df\Framework\Form\Element\Checkbox'
+				>
+					<label>Enable?</label>
+					<backend_model>Df\Config\Backend\Checkbox</backend_model>
+					<comment><![CDATA[Enable the «<a href='https://mage2.pro/c/extensions/zoho-crm' target='_blank'>Zoho CRM</a>» extension?]]></comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
