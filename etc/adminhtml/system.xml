@@ -47,6 +47,33 @@
 					</depends>
 					<validate>required-entry</validate>
 				</field>
+				<field
+					id='domain'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='3'
+					translate='label'
+					type='select'
+				>
+					<label>Your Zoho CRM domain</label>
+					<source_model>Dfe\ZohoCRM\Source\Domain</source_model>
+					<comment><![CDATA[You can find it out in your browser's address bar after logging into your Zoho CRM application.]]></comment>
+					<depends>
+						<field id='enable'>1</field>
+					</depends>
+				</field>
+				<field
+					id='domain_custom'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='4'
+					translate='label'
+				>
+					<label>Custom Domain</label>
+					<comment><![CDATA[]]></comment>
+					<depends>
+						<field id='enable'>1</field>
+						<field id='domain'>other</field>
+					</depends>
+				</field>
 			</group>
 		</section>
 	</system>
