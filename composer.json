@@ -1,7 +1,7 @@
 {
 	"name": "mage2pro/zoho-crm"
 	,"version": "0.0.4"
-	,"description": "The «Zoho CRM» extension for Magento 2."
+	,"description": "Zoho CRM integration with Magento 2"
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/mage2pro/zoho-crm"
 	,"license": "proprietary"
