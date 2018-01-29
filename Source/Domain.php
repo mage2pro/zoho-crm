@@ -14,7 +14,7 @@ final class Domain extends \Df\Config\Source {
 	 */
 	protected function map() {return
 		[0 => '-- select a value --']
-		+ dfa_combine_self(['crm.zoho.com', 'crm.zoho.eu', 'crm.zoho.com.cn', 'crm.zoho.co.jp'])
+		+ dfa_combine_self('crm.zoho.com', 'crm.zoho.eu', 'crm.zoho.com.cn', 'crm.zoho.co.jp')
 		+ [self::OTHER => 'Other']
 	;}
 
