@@ -1,7 +1,7 @@
 <?php
 namespace Dfe\ZohoCRM\API;
 use Dfe\ZohoCRM\Settings;
-// 2017-07-08
+# 2017-07-08
 /** @method Settings ss() */
 final class Client extends \Df\Zoho\API\Client {
 	/**
@@ -14,9 +14,9 @@ final class Client extends \Df\Zoho\API\Client {
 	 * @return array(string => mixed)
 	 */
 	final protected function commonParams($path) {return [
-		// 2017-07-08 «Encrypted alphanumeric string to authenticate your Zoho credentials»
+		# 2017-07-08 «Encrypted alphanumeric string to authenticate your Zoho credentials»
 		'authtoken' => $this->ss()->token()
-		// 2017-07-08 «Specify the value as `crmapi`»
+		# 2017-07-08 «Specify the value as `crmapi`»
 		,'scope' => 'crmapi'
 	];}
 
