@@ -12,7 +12,7 @@ final class Domain extends \Df\Config\Source {
 	 * @used-by \Df\Config\Source::toOptionArray()
 	 * @return array(string => string)
 	 */
-	protected function map() {return
+	protected function map():array {return
 		df_map_0(dfa_combine_self('crm.zoho.com', 'crm.zoho.eu', 'crm.zoho.com.cn', 'crm.zoho.co.jp'))
 		+ [self::OTHER => 'Other']
 	;}
