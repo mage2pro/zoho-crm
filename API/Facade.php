@@ -16,7 +16,7 @@ final class Facade {
 	 * @return array(string => mixed)
 	 * @throws DFE
 	 */
-	final function p(string $path, string $ns = '', array $p = [], string $method = '') {return C::i(
+	final function p(string $path, string $ns = '', array $p = [], string $method = ''):array {return C::i(
 		$this, df_cc_path($ns, $path), $p, $method
 	)->p();}
 
