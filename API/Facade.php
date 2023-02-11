@@ -8,7 +8,7 @@ final class Facade {
 	 * 2017-07-08 https://www.zoho.eu/crm/help/api/getmodules.html
 	 * @return array(array(string => mixed))
 	 */
-	final function getModules() {return $this->p(__FUNCTION__, 'Info');}
+	final function getModules():array {return $this->p(__FUNCTION__, 'Info');}
 	
 	/**
 	 * 2017-07-08
