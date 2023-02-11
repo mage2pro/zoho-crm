@@ -9,10 +9,9 @@ final class Client extends \Df\Zoho\API\Client {
 	 * @override
 	 * @see \Df\API\Client::commonParams()
 	 * @used-by \Df\API\Client::__construct()
-	 * @param string $path
 	 * @return array(string => mixed)
 	 */
-	final protected function commonParams($path):array {return [
+	final protected function commonParams(string $path):array {return [
 		'authtoken' => $this->ss()->token() # 2017-07-08 «Encrypted alphanumeric string to authenticate your Zoho credentials»
 		,'scope' => 'crmapi' # 2017-07-08 «Specify the value as `crmapi`»
 	];}
