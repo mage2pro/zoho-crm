@@ -23,6 +23,9 @@ final class Facade {
 		$this, df_cc_path($ns, $path), $p, $method
 	)->p();}
 
-	/** 2017-07-08 @return self */
-	static function s() {static $r; return $r ? $r : $r = new self;}
+	/**
+	 * 2017-07-08
+	 * @used-by \Dfe\ZohoCRM\Test\Basic::t02_getModules()
+	 */
+	static function s():self {static $r; return $r ? $r : $r = new self;}
 }
