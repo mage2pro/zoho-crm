@@ -5,7 +5,7 @@
 >
 	<module name='Dfe_ZohoCRM' setup_version='1.0.0'>
 		<sequence>
-			<module name='Df_Zoho'/>
+			<module name='Dfe_Zoho'/>
 		</sequence>
 	</module>
 </config>

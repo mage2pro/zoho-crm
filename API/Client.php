@@ -3,7 +3,7 @@ namespace Dfe\ZohoCRM\API;
 use Dfe\ZohoCRM\Settings;
 # 2017-07-08
 /** @method Settings ss() */
-final class Client extends \Df\Zoho\API\Client {
+final class Client extends \Dfe\Zoho\API\Client {
 	/**
 	 * 2017-07-08 https://www.zoho.eu/crm/help/api/getmodules.html#Request_URL
 	 * @override
