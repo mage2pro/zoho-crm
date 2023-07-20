@@ -1,6 +1,6 @@
 {
 	"name": "mage2pro/zoho-crm"
-	,"version": "0.1.1"
+	,"version": "0.1.2"
 	,"description": "Zoho CRM integration with Magento 2"
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/mage2pro/zoho-crm"

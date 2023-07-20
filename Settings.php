@@ -7,5 +7,5 @@ final class Settings extends \Dfe\Zoho\Settings {
 	 * 2017-07-08
 	 * @used-by \Dfe\ZohoCRM\API\Client::urlBase()
 	 */
-	function domain():string {return $this->v(null, null, $this->v('domain_custom'));}
+	function domain():string {return $this->v('', null, $this->v('domain_custom'));}
 }
